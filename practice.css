@@ -1,0 +1,30 @@
+h1{
+	color:navy;
+}
+#label1{
+	color:navy;
+}
+
+.withShadowText{
+  	text-shadow: 2px 2px 4px #000000;
+}
+
+.withShadowImage{
+	box-shadow: 2px 2px 4px #000000;
+}
+
+#legoBrick{
+
+}
+
+#legoBrick:hover{
+	width: 5%;
+
+	box-shadow: 2px 2px 4px #000000;
+
+}
+
+
+
+
+

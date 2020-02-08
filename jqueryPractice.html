@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+	<head>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <link rel="stylesheet" href="practice.css">
+		<title>JQUERY PRACTICE AARON</title>
+	</head>
+
+ 	<body> 
+
+
+ 		<h1>JQUERY PRACTICE AARON</h1>
+
+ 		<button type="button" id="shadowButton">shadow</button>
+
+ 		<input type="text" id="inputTest"></input>
+
+ 		<div id="label1">
+
+ 			<img id=legoBrick width = 100 src="legobrick.jpg">
+
+ 			<img id=legoFactory hidden="true" width = 150 src="legofactory.jpg">
+
+ 			<textarea id=legoText hidden="true"></textarea>
+
+ 		</div>
+
+ 		<script>
+ 			$("#legoBrick").click(function(){
+ 				$("#legoFactory").toggle(100)
+ 				$("#legoText").toggle(150)
+ 			});
+
+
+ 			$("#legoFactory").click(function(){
+ 				$(this).css({"border": "5px solid red"})
+ 			});
+
+ 			$("#inputTest").keypress(function(){
+ 				$("#legoText").text($(this).val());
+ 			});
+
+ 			$("#shadowButton").click(function(){
+ 				$("h1").toggleClass("withShadow")
+
+ 			});
+
+
+
+ 		</script>
+
+
+
+
+
+	</body>
+
+
+
+
+</html>
